@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Public Details - Fin.XL Solution</title>
+  <style>
+    :root {
+      font-family: 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+      color: #1e293b;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f8fafc, #eef2ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      width: 1100px;
+      max-width: 100%;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+      padding: 32px;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); }
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 18px;
+    }
+    .avatar {
+      width: 90px; height: 90px;
+      border-radius: 16px;
+      background: linear-gradient(135deg,#4f46e5,#7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      box-shadow: 0 4px 12px rgba(79,70,229,.3);
+    }
+    h1 { margin: 0; font-size: 26px; color:#1e293b; }
+    p.lead { margin: 6px 0 0; color:#475569; font-weight:500; }
+
+    nav { margin: 20px 0; }
+    a.link-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #1e293b;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      transition: all .2s;
+    }
+    a.link-btn:hover {
+      background:#4f46e5; color:#fff; border-color:#4f46e5;
+    }
+
+    section.details { display:none; margin-top: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 20px;
+    }
+    .box {
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      padding:18px;
+      border-radius:12px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,.02);
+    }
+    .box h3 { margin-top:0; color:#374151; }
+    footer {
+      margin-top:20px;
+      color:#64748b;
+      font-size:13px;
+      text-align:center;
+    }
+    .close {
+      float:right;
+      cursor:pointer;
+      font-weight:600;
+      color:#ef4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <div class="avatar">FX</div>
+      <div>
+        <h1 id="name">Fin.XL SOLUTION</h1>
+        <p class="lead" id="title">ACCOUNT EXPERTS • ADVANCED EXCEL EXPERTS • US PAYROLL SPECIALIST</p>
+      </div>
+    </header>
+
+    <nav>
+      <a class="link-btn" href="https://yourdomain.com/my-details" id="openLink">
+        https://yourdomain.com/my-details
+      </a>
+    </nav>
+
+    <section class="details" id="details">
+      <span class="close" id="closeBtn">✕ Close</span>
+      <div class="grid">
+        <div class="box">
+          <h3>About Me</h3>
+          <p id="aboutMe">
+            Proficient in Accounting with strong expertise in Advanced Excel for data analysis,
+            reporting, and automation, along with hands-on knowledge of US Payroll processes
+            and compliance.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Contact</h3>
+          <p id="contact">
+            Email: <a href="mailto:you@example.com">you@example.com</a><br/>
+            LinkedIn: <a href="#">linkedin.com/in/yourname</a><br/>
+            Phone: +91-9876543210
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Company Address</h3>
+          <p id="address">
+            Fin.XL Solution<br/>
+            123 Business Park, Sector 45<br/>
+            Gurugram, Haryana, India<br/>
+            ZIP - 122003
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>About My Company</h3>
+          <p id="aboutCompany">
+            We are a professional finance services firm specializing in Accounting, Advanced Excel
+            analytics, and US Payroll solutions. Our mission is to deliver accurate financial records,
+            actionable reporting, and fully managed payroll services — all backed by secure processes
+            and automation. We help SMEs streamline operations, ensure compliance, and improve
+            financial visibility.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Key Services</h3>
+          <p id="moreInfo">
+            • Accounting & Bookkeeping: Ledger, AP/AR, reconciliations, financial statements.<br/>
+            • Advanced Excel: Dashboards, automation, Power Query, VBA models.<br/>
+            • US Payroll & Compliance: Full payroll, tax compliance, year-end reporting.<br/>
+            • Advisory: Budgeting, forecasting, internal controls, team training.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Files & Resources</h3>
+          <p id="files">
+            <a href="files/CompanyProfile.pdf" target="_blank">📄 Company Profile (PDF)</a><br/>
+            <a href="files/ServicesBrochure.pdf" target="_blank">📊 Services Brochure</a><br/>
+            <a href="files/Certifications.zip" target="_blank">🎓 Certifications</a>
+          </p>
+          <small>Tip: Place your files in a <code>/files</code> folder in your repo and link them here.</small>
+        </div>
+      </div>
+
+      <footer>
+        Hosted via GitHub Pages with HTTPS. Share this link directly for mobile or desktop access.
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    const openLink = document.getElementById('openLink');
+    const details = document.getElementById('details');
+    const closeBtn = document.getElementById('closeBtn');
+
+    openLink.addEventListener('click', function(e){
+      e.preventDefault();
+      details.style.display = 'block';
+      details.scrollIntoView({behavior:'smooth'});
+      try { history.replaceState(null,'', '/my-details'); } catch(err){}
+    });
+
+    closeBtn.addEventListener('click', function(){
+      details.style.display='none';
+      try { history.replaceState(null,'', '/'); } catch(err){}
+    });
+  </script>
+</body>
+</html>
